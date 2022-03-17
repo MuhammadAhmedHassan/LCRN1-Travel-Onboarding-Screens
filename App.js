@@ -1,6 +1,5 @@
-
 import React from 'react';
-import {useColorScheme} from 'react-native';
+import {useColorScheme, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 // Screens
@@ -13,7 +12,10 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}>
         <Stack.Screen name="OnBoarding" component={OnBoarding} />
       </Stack.Navigator>
     </NavigationContainer>

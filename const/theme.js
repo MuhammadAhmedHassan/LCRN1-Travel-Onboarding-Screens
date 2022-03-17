@@ -42,4 +42,4 @@ const FONTS = {
   body4: {fontFamily: 'Roboto-Regular', fontSize: SIZES.body4, lineHeight: 22},
 };
 
-export default {COLORS, SIZES, FONTS};
+export {COLORS, SIZES, FONTS};
